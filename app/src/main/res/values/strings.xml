@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mvvmlivedata</string>
+    <string name="media">Media</string>
+    <string name="notifi">Notifi</string>
+    <string name="infor">Infor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">Save</string>
+</resources>
