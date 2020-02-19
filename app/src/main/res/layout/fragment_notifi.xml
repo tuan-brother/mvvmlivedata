@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/dai_mau">
 
     <EditText
         android:id="@+id/edt_save"
@@ -11,6 +12,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:hint="@string/ghichu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -30,8 +32,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:background="#00B7FF">
+        android:layout_marginTop="50dp">
         <ListView
             android:id="@+id/lv_notifi"
             android:layout_width="match_parent"
@@ -45,6 +46,9 @@
             app:layout_anchorGravity="bottom|center"
             android:layout_marginBottom="5dp"/>
 
-        <include layout="@layout/fab_item" />
+        <include
+            layout="@layout/fab_item"
+            app:layout_anchor="@+id/lv_notifi"
+            app:layout_anchorGravity="center" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

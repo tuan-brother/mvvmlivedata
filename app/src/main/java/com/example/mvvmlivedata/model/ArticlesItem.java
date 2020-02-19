@@ -118,11 +118,11 @@ public class ArticlesItem{
 			",content = '" + content + '\'' + 
 			"}";
 		}
-	@BindingAdapter("profileImage")
-	public static void loadImage(ImageView view, String imageUrl) {
-		Glide.with(view.getContext())
-				.load(imageUrl)
-				.into(view);
+		@BindingAdapter("profileImage")
+		public static void loadImage(ImageView view, String imageUrl) {
+			Glide.with(view.getContext())
+					.load(imageUrl)
+					.into(view);
 
-	}
+		}
 }
